@@ -1,14 +1,21 @@
 /// @description player movement
 
+var hinput = keyboard_check(vk_right) - keyboard_check(vk_left)
 
 /* hspeed */
-if keyboard_check(vk_right) {
-	hspeed_ = 7
-} else if keyboard_check(vk_left) {
-	hspeed_ = -7
+if hinput != 0 {
+	hspeed_ += hinput * acceleration_
+	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
 } else {
-	hspeed_ = 0
+	hspeed_  = lerp(hspeed_, 0, friction_)
 }
+
+if !place_meeting(x, y + 1, o_solid) {
+	vspeed_ += gravity_
+} else if keyboard_check_pressed(vk_up) {
+	vspeed_ = jump_height_
+}
+
 
 if place_meeting(x + hspeed_, y, o_solid) {
 	
@@ -21,18 +28,7 @@ if place_meeting(x + hspeed_, y, o_solid) {
 
 x += hspeed_
 
-
-
-
 /* vspeed */
-if keyboard_check(vk_down) {
-	vspeed_ = 7
-} else if keyboard_check(vk_up) {
-	vspeed_ = -7
-} else {
-	vspeed_ = 0
-}
-
 if place_meeting(x, y + vspeed_, o_solid) {
 	
 	while !place_meeting(x, y + sign(vspeed_), o_solid) {
@@ -42,4 +38,4 @@ if place_meeting(x, y + vspeed_, o_solid) {
 	vspeed_ = 0
 }
 
-y += hspeed_
+y += vspeed_
