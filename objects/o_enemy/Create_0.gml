@@ -3,7 +3,14 @@
 hspeed_ = 0
 vspeed_ = 0
 speed_  = 3
-health_ = 4	
+health_ = 4
 
 hspeed_push_ = 0
 vspeed_push_ = 0
+
+// states
+MOVEMENT_ = 0
+ATTACK_   = 1
+HIT_      = 2
+
+state_ = MOVEMENT_

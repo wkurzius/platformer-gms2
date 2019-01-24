@@ -8,6 +8,8 @@ acceleration_ = 1
 jump_height_  = -10
 friction_     = .3
 
+last_key_pressed_ = 0
+
 // key mapping
 keyboard_set_map(ord("W"), vk_up)
 keyboard_set_map(ord("A"), vk_left)

@@ -3,6 +3,12 @@
 var hinput = keyboard_check(vk_right) - keyboard_check(vk_left)
 var k_right = keyboard_check(vk_right)
 var k_left  = keyboard_check(vk_left)
+var k_right_pressed = keyboard_check_pressed(vk_right)
+var k_left_pressed  = keyboard_check_pressed(vk_left)
+
+
+if      (k_left_pressed)      last_key_pressed_ = -1
+else if (k_right_pressed)     last_key_pressed_ =  1
 
 if      ( k_left && !k_right) {
 	hspeed_ -= acceleration_
@@ -13,6 +19,29 @@ else if (!k_left &&  k_right) {
 	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
 }
 else if (!k_left && !k_right) hspeed_  = lerp(hspeed_, 0, friction_)
+else if last_key_pressed_ = -1 {
+	hspeed_ -= acceleration_
+	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
+}
+else if last_key_pressed_ = 1 {
+hspeed_ += acceleration_
+	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
+}
+
+
+/* movement v2
+if      ( k_left && !k_right) {
+	hspeed_ -= acceleration_
+	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
+}
+else if (!k_left &&  k_right) {
+	hspeed_ += acceleration_
+	hspeed_  = clamp(hspeed_, -max_hspeed_, max_hspeed_)
+}
+else if (!k_left && !k_right) hspeed_  = lerp(hspeed_, 0, friction_)
+*/
+
+
 
 
 /* hspeed */
