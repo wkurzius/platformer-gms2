@@ -10,7 +10,8 @@ if (alarm[0] <= 0) {
 	var gun_x = x - (4 * flipped) + x_offset
 	var gun_y = y + y_offset
 
-	instance_create_layer(gun_x, gun_y-(sprite_height/2), "Instances", o_bullet)
+	var bullet = instance_create_layer(gun_x, gun_y-(sprite_height/2), "Instances", o_bullet)
+	bullet.direction = dir
 	
 	alarm[0] = bullet_cooldown_
 }

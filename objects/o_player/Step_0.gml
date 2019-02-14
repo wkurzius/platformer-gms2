@@ -1,5 +1,8 @@
 /// @description player movement
 
+if (health_ <= 0) instance_destroy()
+
+
 var hinput = keyboard_check(vk_right) - keyboard_check(vk_left)
 var k_right = keyboard_check(vk_right)
 var k_left  = keyboard_check(vk_left)
