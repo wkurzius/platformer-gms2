@@ -16,9 +16,6 @@ if instance_exists(o_player) {
 		vspeed_push_ = lerp(vspeed_push_, 0, 0.1)
 	}
 
-	// death
-	if (health_ <= 0) instance_destroy()
-
 	if (distance_to_object(o_player) < 48) state_ = ATTACK_
 
 }
