@@ -16,7 +16,5 @@ alarm[0] = bullet_cooldown_
 
 // states
 MOVEMENT_ = 0
-//ATTACK_   = 1
-//HIT_      = 2
 
 state_ = MOVEMENT_

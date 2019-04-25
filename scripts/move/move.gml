@@ -1,31 +1,29 @@
-/// @param hspeed
-/// @param vspeed
 /// @param bounce
 
-var bounce = argument[2]
+var bounce = argument[0]
 
-if place_meeting(x + argument[0], y, o_solid) {
+if place_meeting(x + hspeed_, y, o_solid) {
 	
-	while !place_meeting(x + sign(argument[0]), y, o_solid) {
-		x += sign(argument[0])
+	while !place_meeting(x + sign(hspeed_), y, o_solid) {
+		x += sign(hspeed_)
 	}
 	
-	if (bounce > 0) argument[0] *= -bounce
-	else argument[0] = 0
+	if (bounce > 0) hspeed_ *= -bounce
+	else hspeed_ = 0
 }
 
-x += argument[0]
+x += hspeed_
 
 /* vspeed */
-if place_meeting(x, y + argument[1], o_solid) {
+if place_meeting(x, y + vspeed_, o_solid) {
 	
-	while !place_meeting(x, y + sign(argument[1]), o_solid) {
-		y += sign(argument[1])
+	while !place_meeting(x, y + sign(vspeed_), o_solid) {
+		y += sign(vspeed_)
 	}
 	
-	if (bounce > 0) argument[1] *= -bounce
-	else argument[1] = 0
+	if (bounce > 0) vspeed_ *= -bounce
+	else vspeed_ = 0
 	
 }
 
-y += argument[1]
+y += vspeed_

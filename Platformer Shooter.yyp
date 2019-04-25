@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "7155ba60-458e-41ec-9c46-e562dfe04bb9",
+            "Value": {
+                "id": "77cf7b4b-bd07-4ed8-83ff-2204fe0c5f16",
+                "resourcePath": "scripts\\move_mine\\move_mine.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "844ab333-4ef0-428a-974d-26d861654c12",
             "Value": {
                 "id": "6dd3b1b8-985d-49e4-8251-d9a7e09a8599",
@@ -361,6 +369,7 @@
     ],
     "script_order": [
         "6aefc0a3-b9b1-4386-8963-77e22aefa0e4",
+        "7155ba60-458e-41ec-9c46-e562dfe04bb9",
         "e28dd0c1-d799-4afc-be9f-b6308a5b8f12",
         "5fac9acf-4eac-4d89-b3e9-80f93c7e58ec"
     ],

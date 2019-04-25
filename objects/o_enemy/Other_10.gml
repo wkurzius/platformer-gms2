@@ -3,21 +3,24 @@
 if instance_exists(o_player) {
 	// move
 	var dir = point_direction(x, y, o_player.x, o_player.y)
-	hspeed_ = lengthdir_x(speed_, dir)
-	vspeed_ = lengthdir_y(speed_, dir)
-
-	move(hspeed_, vspeed_, 1)
-
-	// push
-	move(hspeed_push_, vspeed_push_, 1)
-
-	if (!place_meeting(x, y, o_enemy)) {
-		hspeed_push_ = lerp(hspeed_push_, 0, 0.1)
-		vspeed_push_ = lerp(vspeed_push_, 0, 0.1)
+	
+	hspeed_ += lengthdir_x(acceleration_, dir)
+	vspeed_ += lengthdir_y(acceleration_, dir)
+	
+	if point_distance(0, 0, hspeed_, vspeed_) > speed_ {
+		var move_dir = point_direction(0, 0, hspeed_, vspeed_)
+		
+		hspeed_ = lengthdir_x(speed_, move_dir)
+		vspeed_ = lengthdir_y(speed_, move_dir)
 	}
 
-	if (distance_to_object(o_player) < 48) state_ = ATTACK_
 	
-	enemy_fire()
+
+	if (distance_to_object(o_player) < 48) enemy_fire()
+	
+	if point_in_rectangle(x, y, 0, 0, room_width, room_height)
+		enemy_fire()
 
 }
+
+move(1)
