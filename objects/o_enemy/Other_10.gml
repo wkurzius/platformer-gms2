@@ -6,10 +6,10 @@ if instance_exists(o_player) {
 	hspeed_ = lengthdir_x(speed_, dir)
 	vspeed_ = lengthdir_y(speed_, dir)
 
-	move(hspeed_, vspeed_)
+	move(hspeed_, vspeed_, 1)
 
 	// push
-	move(hspeed_push_, vspeed_push_)
+	move(hspeed_push_, vspeed_push_, 1)
 
 	if (!place_meeting(x, y, o_enemy)) {
 		hspeed_push_ = lerp(hspeed_push_, 0, 0.1)
@@ -17,5 +17,7 @@ if instance_exists(o_player) {
 	}
 
 	if (distance_to_object(o_player) < 48) state_ = ATTACK_
+	
+	enemy_fire()
 
 }
