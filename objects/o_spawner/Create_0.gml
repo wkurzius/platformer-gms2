@@ -1,3 +1,7 @@
 /// @description variables
 
-wave_ = 1
+global.wave = 1
+
+SPAWN_ENEMIES_ = 0
+
+event_user(SPAWN_ENEMIES_)

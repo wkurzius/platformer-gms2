@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "e03e0c8d-b36f-4662-a6e3-7aa4bdf6cb0b",
+            "Value": {
+                "id": "b9bee24f-0d18-4d5d-b9ce-94aead91b22f",
+                "resourcePath": "objects\\o_killbar\\o_killbar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e28dd0c1-d799-4afc-be9f-b6308a5b8f12",
             "Value": {
                 "id": "d59565c3-dc62-4b8f-ba88-d695a07927af",

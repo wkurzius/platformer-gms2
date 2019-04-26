@@ -3,7 +3,7 @@
 if (health_ <= 0) instance_destroy()
 
 
-var hinput = keyboard_check(vk_right) - keyboard_check(vk_left)
+//var hinput = keyboard_check(vk_right) - keyboard_check(vk_left)
 var k_right = keyboard_check(vk_right)
 var k_left  = keyboard_check(vk_left)
 var k_right_pressed = keyboard_check_pressed(vk_right)

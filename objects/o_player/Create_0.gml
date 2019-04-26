@@ -10,6 +10,7 @@ friction_     = .3
 max_health_	  = 20
 health_		  = max_health_
 invincible_	  = false
+score		  = 0
 
 last_key_pressed_ = 0
 
@@ -22,7 +23,8 @@ keyboard_set_map(ord("D"), vk_right)
 keyboard_set_map(vk_space, vk_up)
 
 //bullet cooldown
-bullet_cooldown_ = room_speed / 6
+default_bullet_cooldown_ = room_speed / 6
+bullet_cooldown_ = default_bullet_cooldown_
 alarm[0] = bullet_cooldown_
 
 //scale varaibles

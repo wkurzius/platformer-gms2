@@ -14,5 +14,8 @@ if (alarm[0] <= 0) {
 	bullet.direction   = dir
 	bullet.image_angle = dir
 	
+	
+	bullet_cooldown_ = default_bullet_cooldown_ - (max_health_ - health_) * 0.25
+	
 	alarm[0] = bullet_cooldown_
 }

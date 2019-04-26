@@ -9,5 +9,5 @@ if (alarm[1] % interval <= interval * 0.5) {
 	draw_sprite_ext(s_gun, 0, x-(4*flipped), y-(sprite_height/2), 1, flipped, dir, image_blend, image_alpha)
 
 }
-//draw_text(x, y, string(vspeed_))
+draw_text(x, y, string(health_))
 
