@@ -9,6 +9,7 @@ jump_height_  = -10
 friction_     = .3
 max_health_	  = 20
 health_		  = max_health_
+invincible_	  = false
 
 last_key_pressed_ = 0
 
