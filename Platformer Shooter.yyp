@@ -95,11 +95,27 @@
             }
         },
         {
+            "Key": "201a55df-eeb5-4203-8206-5730e89954d2",
+            "Value": {
+                "id": "6f724a9e-9f98-4b19-92ac-f84eb142bc27",
+                "resourcePath": "sounds\\a_explosion\\a_explosion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "27ca585c-394b-46d5-82b6-e576b67e38e3",
             "Value": {
                 "id": "a5a27abc-1b2a-4694-a868-5f119303f1a5",
                 "resourcePath": "views\\27ca585c-394b-46d5-82b6-e576b67e38e3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "39a9f842-55f2-4b88-93d4-23fd67d8c68b",
+            "Value": {
+                "id": "d8ea41d7-ced0-493b-b32e-3bc187393212",
+                "resourcePath": "sounds\\a_hit\\a_hit.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -119,11 +135,27 @@
             }
         },
         {
+            "Key": "5194cf96-e1a0-4bde-867f-84c551f4a173",
+            "Value": {
+                "id": "de9b7993-a6c9-49f0-aff2-857cc0a5b5f3",
+                "resourcePath": "sounds\\a_hurt\\a_hurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "52b3838d-3e19-4e91-91a1-4bf0abb7cb56",
             "Value": {
                 "id": "1b61aaec-9ac6-412d-9014-43afcfde17d2",
                 "resourcePath": "views\\52b3838d-3e19-4e91-91a1-4bf0abb7cb56.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "57232783-89ce-48ca-8a05-611dd00456d0",
+            "Value": {
+                "id": "982574fd-d5a4-436e-9db7-b3e77afc328c",
+                "resourcePath": "sounds\\a_enemy_laser\\a_enemy_laser.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -260,6 +292,14 @@
                 "id": "5895169a-937e-418a-afae-5d14b652255f",
                 "resourcePath": "objects\\o_game\\o_game.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9f139cda-a6bd-4bdd-9852-78515032209a",
+            "Value": {
+                "id": "c2fb9dca-0d7f-44a2-8525-c322bcf623ad",
+                "resourcePath": "sounds\\a_laser\\a_laser.yy",
+                "resourceType": "GMSound"
             }
         },
         {
