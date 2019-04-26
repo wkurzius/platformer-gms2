@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "9e1dd65e-d322-492b-acf0-537d5a1bb99b",
+            "Value": {
+                "id": "5895169a-937e-418a-afae-5d14b652255f",
+                "resourcePath": "objects\\o_game\\o_game.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a8f4bfd4-6b5f-45ee-8fc6-398de6528efc",
             "Value": {
                 "id": "5a3fc3e9-1de3-48b3-82bf-40a08fba776e",
@@ -300,6 +308,14 @@
                 "id": "fb2b94b7-80d1-40f4-b8f7-eef12cea8e4a",
                 "resourcePath": "views\\d2535bf0-eab6-426f-ac61-5bbffcb8d02b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d6208fb7-cafa-4edf-9271-76e1ae539ac1",
+            "Value": {
+                "id": "58ddc3fe-4e8d-4e9b-81f5-ad91026467cd",
+                "resourcePath": "fonts\\f_pause\\f_pause.yy",
+                "resourceType": "GMFont"
             }
         },
         {
