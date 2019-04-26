@@ -1,6 +1,6 @@
 /// @description move to mouse
 
-speed = 10
+speed = 7
 
 depth = -1
 
