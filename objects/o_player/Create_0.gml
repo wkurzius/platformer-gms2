@@ -7,7 +7,7 @@ gravity_      = 0.5
 acceleration_ = 1
 jump_height_  = -10
 friction_     = .3
-max_health_	  = 500
+max_health_	  = 20
 health_		  = max_health_
 
 last_key_pressed_ = 0
